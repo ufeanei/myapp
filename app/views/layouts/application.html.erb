@@ -20,11 +20,8 @@
       <%= link_to root_path, class: 'navbar-brand' do %>
         <i class='fa fa-group '> </i>
         Dev Match
-      <% end %>
-     
-      
+      <% end %>   
     </div>
-
     <div class='collapse navbar-collapse' id='main-nav-collapse'>
       <% if current_user %>
         <div class='nav navbar-nav navbar-right'> 
@@ -34,7 +31,6 @@
       <% else %>
         <div class='nav navbar-nav navbar-right'>
           <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn' %>
-          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success navbar-btn' %>
         </div>
       <% end %>
     	<ul class='nav navbar-nav navbar-right'>
@@ -42,7 +38,6 @@
         <li><%= link_to 'Contact US', new_contact_path %></li>
     	</ul>
     </div> <!-- end of navbar collapse-->
- 
   </div> 
 </nav>
 
