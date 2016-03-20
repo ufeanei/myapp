@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
       name =params[:contact][:name]
       email =params[:contact][:email]
       body =params[:contact][:comments]
-      ContactMailer.contact_email(name, email, body).deliver
+     # ContactMailer.contact_email(name, email, body).deliver
       flash[:success] = "Thank you! Your message has been sent"
       redirect_to root_path
     else
